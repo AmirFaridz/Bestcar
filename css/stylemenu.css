@@ -1,0 +1,112 @@
+/* --- Menu Overlay --- */
+#menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1001; 
+}
+
+/* --- Side Menu Container --- */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -400px; 
+    width: 350px;
+    height: 100vh;
+    background-color: #5a5a5a; 
+    z-index: 1002; 
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+    padding-top: 60px; 
+    font-family: 'Georgia', serif; 
+}
+
+/* --- Close Button --- */
+/* Matched exactly to the ☰ icon in the main header */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 40px; 
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #000000;
+}
+
+/* --- Menu Items --- */
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 18px 0;
+    margin: 0 30px; 
+    border-bottom: 1px solid #ffffff; 
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Menu Icons Wrapper --- */
+/* The width here pushes the text into a perfect vertical column */
+.menu-icon-wrapper {
+    width: 90px; 
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 15px; 
+}
+
+.menu-img {
+    object-fit: contain;
+}
+
+/* 
+ * The Home icon is made significantly larger
+ */
+.menu-icon-home { 
+    width: 85px; 
+    height: 50px; 
+}
+
+/* 
+ * All car icons are forced into consistent boundaries 
+ */
+.menu-icon-sedan, .menu-icon-suv, .menu-icon-hatchback, .menu-icon-mpv, .menu-icon-sports, .menu-icon-ev { 
+    width: 55px; 
+    height: 55px; 
+}
+
+.menu-icon-crossover { 
+    width: 55px; 
+    height: 55px; 
+    transform: rotate(46deg);
+}
+
+.menu-icon-pickup { 
+    width: 55px; 
+    height: 55px; 
+    transform: rotate(-45deg);
+}
+
+/* --- Menu Typography --- */
+.menu-item span {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff; 
+    text-decoration-thickness: 3px; 
+    text-underline-offset: 5px; 
+}

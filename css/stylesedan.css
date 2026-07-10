@@ -1,0 +1,245 @@
+/* --- Sedan Page Unique Background --- */
+body.sedan-page {
+    /* Primary Radial Gradient */
+    background: radial-gradient(circle at center, silver 0%, #353535 100%);
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+
+body.sedan-page::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* Overlay Pattern with Opacity */
+    background-image: url('../img/background/pattern.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.82; 
+    z-index: -1; 
+    pointer-events: none; 
+}
+
+/* --- Top Feature Card (Updated Design) --- */
+.feature-card-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px 20px 20px;
+}
+
+.custom-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 750px;
+    position: relative;
+}
+
+/* Top Container (Car & Title) */
+.showcase-top {
+    background-color: rgba(192, 192, 192, 0); /* Made transparent */
+    backdrop-filter: blur(12px); /* Glass blur effect */
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    width: 85%;
+    border-radius: 40px;
+    padding: 40px 20px 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Bottom Container (Stats) */
+.showcase-bottom {
+    background-color: rgba(52, 52, 52, 0.85); /* Slightly more opaque glass */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    width: 100%;
+    border-radius: 40px;
+    padding: 40px 50px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Individual Bar Container */
+.showcase-bottom .bars {
+    display: flex;
+    width: 350px;
+    height: 22px;
+    gap: 8px; /* Creates the empty space between the blocks */
+}
+
+/* Individual Segments */
+.showcase-bottom .bar {
+    flex: 1;
+    background-color: #ffffff; 
+    border-radius: 4px; /* Rounds the corners of each individual block */
+}
+
+/* Filled Highlighted Segment */
+.showcase-bottom .bar.filled {
+    background-color: #b0b0b0;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .showcase-top {
+        width: 95%;
+        padding: 30px 10px 50px 10px;
+    }
+    .showcase-top h1 {
+        font-size: 36px;
+    }
+    .showcase-bottom {
+        padding: 30px 20px;
+        margin-top: -40px;
+    }
+    .showcase-bottom .stat-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .showcase-bottom .label {
+        text-align: center;
+        width: auto;
+    }
+    .showcase-bottom .bars {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* --- Accordion (Collapsible) Container --- */
+.accordion-container {
+    max-width: 1000px;
+    margin: 40px auto 80px auto;
+    padding: 0 20px;
+}
+
+details {
+    margin-bottom: 10px;
+}
+
+/* Remove default HTML details marker */
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Summary Header Styling */
+summary {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ebebeb;
+    cursor: pointer;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: color 0.3s;
+    user-select: none;
+}
+
+summary:hover {
+    color: #a9a9a9;
+}
+
+/* The Interactive Arrow */
+summary .arrow {
+    display: inline-block;
+    font-size: 32px;
+    transition: transform 0.3s ease;
+    transform: rotate(180deg); /* Points down when CLOSED */
+}
+
+/* Rotates upside down (points UP) when the box is OPEN */
+details[open] summary .arrow {
+    transform: rotate(0deg); 
+}
+
+/* --- Accordion Content Area --- */
+.details-content {
+    padding: 15px 0 40px 0;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #ffffff;
+}
+
+.details-content ul {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.details-content li {
+    margin-bottom: 10px;
+}
+
+.details-content p {
+    margin-bottom: 15px;
+}
+
+/* Layout for Image / Text side-by-side */
+.content-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.content-text {
+    flex: 1;
+}
+
+.content-text h3 {
+    color: #bebebe;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.content-image {
+    max-width: 250px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* Layout for Standard Styles rows */
+.style-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.style-image {
+    width: 320px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .content-flex, .style-item {
+        flex-direction: column;
+    }
+    .content-image, .style-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,348 @@
+/* --- Crossover Page Unique Background --- */
+body.crossover-page {
+    /* Primary Radial Gradient */
+    background: radial-gradient(circle at center, #E56E24 0%, #565500 100%);
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+
+body.crossover-page::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* Overlay Pattern with Opacity */
+    background-image: url('../img/background/pattern.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.82; 
+    z-index: -1; 
+    pointer-events: none; 
+}
+
+/* --- Top Feature Card (Glassmorphism Design) --- */
+.feature-card-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px 20px 20px;
+}
+
+.custom-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 750px;
+    position: relative;
+}
+
+/* Top Container (Car & Title) */
+.showcase-top {
+    background-color: rgba(165, 134, 39, 0); /* Transparent Glass Base */
+    backdrop-filter: blur(12px); /* Glass blur effect */
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    width: 85%; /* Slightly narrower to create the inset look */
+    border-radius: 40px;
+    padding: 40px 20px 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1; /* Sits behind the bottom box */
+}
+
+.showcase-top h1 {
+    font-family: 'Rockwell', 'Georgia', serif;
+    font-size: 52px;
+    color: #ffbd5b;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.showcase-top .showcase-car {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Bottom Container (Stats) */
+.showcase-bottom {
+    background-color: rgba(134, 76, 22, 0.85); /* Slightly more opaque glass */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    width: 100%;
+    border-radius: 40px;
+    padding: 40px 50px;
+    margin-top: -50px; /* Pulls the box up to overlap the top box */
+    position: relative;
+    z-index: 2; /* Sits in front of the top box */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.showcase-bottom .stat-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.showcase-bottom .label {
+    color: #ffffff;
+    font-family: monospace, sans-serif;
+    font-size: 18px;
+    width: 120px;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+/* Individual Bar Container */
+.showcase-bottom .bars {
+    display: flex;
+    width: 350px;
+    height: 22px;
+    gap: 8px; /* Creates the empty space between the blocks */
+}
+
+/* Individual Segments */
+.showcase-bottom .bar {
+    flex: 1;
+    background-color: #ffffff; 
+    border-radius: 4px; /* Rounds the corners of each individual block */
+}
+
+/* Filled Highlighted Segment */
+.showcase-bottom .bar.filled {
+    background-color: #fdb500;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .showcase-top {
+        width: 95%;
+        padding: 30px 10px 50px 10px;
+    }
+    .showcase-top h1 {
+        font-size: 36px;
+    }
+    .showcase-bottom {
+        padding: 30px 20px;
+        margin-top: -40px;
+    }
+    .showcase-bottom .stat-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .showcase-bottom .label {
+        text-align: center;
+        width: auto;
+    }
+    .showcase-bottom .bars {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* --- Accordion (Collapsible) Container --- */
+.accordion-container {
+    max-width: 1000px;
+    margin: 40px auto 80px auto;
+    padding: 0 20px;
+}
+
+details {
+    margin-bottom: 10px;
+}
+
+/* Remove default HTML details marker */
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Summary Header Styling */
+summary {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffac30;
+    cursor: pointer;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: color 0.3s;
+    user-select: none;
+}
+
+summary:hover {
+    color: #ffffff;
+}
+
+/* The Interactive Arrow */
+summary .arrow {
+    display: inline-block;
+    font-size: 32px;
+    transition: transform 0.3s ease;
+    transform: rotate(180deg); /* Points down when CLOSED */
+}
+
+/* Rotates upside down (points UP) when the box is OPEN */
+details[open] summary .arrow {
+    transform: rotate(0deg); 
+}
+
+/* --- Accordion Content Area --- */
+.details-content {
+    padding: 15px 0 40px 0;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #ffffff;
+}
+
+.details-content ul {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.details-content li {
+    margin-bottom: 10px;
+}
+
+.details-content p {
+    margin-bottom: 15px;
+}
+
+/* Layout for Image / Text side-by-side */
+.content-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.content-text {
+    flex: 1;
+}
+
+.content-text h3 {
+    color: #ffac30;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Stacked images in flex layout */
+.content-images-stacked {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+}
+
+.stacked-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.content-image {
+    max-width: 250px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* --- Layouts for Standard Styles Rows & Image Grids --- */
+
+.style-item {
+    margin-bottom: 50px;
+}
+
+/* Single Item Row Layout (Text Left, Image Right) */
+.style-item.row-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* ALIGN TO CENTER */
+    gap: 40px;
+}
+
+.style-image-single {
+    width: 320px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Column Layout (Text Top, Images Bottom) */
+.style-item.col-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.style-image-grid {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Default styling for grid images */
+.style-image-grid img {
+    flex: 1;
+    min-width: 250px;
+    max-width: 320px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 2 items per row max size adjustments */
+.style-image-grid.two-col img {
+    max-width: 400px;
+}
+
+/* 1 item centered under text */
+.style-image-grid.center-single {
+    justify-content: center;
+}
+.style-image-grid.center-single img {
+    max-width: 350px;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .content-flex, .style-item.row-layout {
+        flex-direction: column;
+    }
+    .content-images-stacked {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .content-image, .style-image-single {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .style-image-grid {
+        justify-content: center;
+    }
+}
