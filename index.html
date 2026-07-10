@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestDrive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylemenu.css"> 
+</head>
+<body id="top">
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo/car.png" alt="Car Logo" class="logo-img"> BestDrive
+            </a>
+            <div class="menu-icon" onclick="openMenu()">☰</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-bg-color"></div>
+        <img src="img/banner/b3.jpg" alt="Hero Banner" class="hero-image">
+        <div class="hero-text">
+            <p>Not Sure What Types Of Car To Buy? Learn Your Taste In This Site! You Can Find 8 Variety Of Car For You To Learn What Are The Function, Price Range, Storage Needs Or The Best Style To Show Off.</p>
+        </div>
+    </section>
+
+<div class="icon-container">
+    <!-- Sedan: Widen spacing to perfectly spread 2 repetitions across the circle -->
+    <a href="sedan.html" class="icon-link">
+        <svg class="spinning-text" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path id="circlePath1" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent" />
+            <text font-family="monospace" font-size="16" fill="white" font-weight="bold" letter-spacing="5">
+                <textPath href="#circlePath1" startOffset="50%" text-anchor="middle">SEDAN • SEDAN •</textPath>
+            </text>
+        </svg>
+        <img src="img/icon/1.png" alt="Sedan Icon" class="icon-sedan">
+    </a>
+
+    <!-- SUV: Keeping original balanced settings -->
+    <a href="suv.html" class="icon-link">
+        <svg class="spinning-text" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path id="circlePath2" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent" />
+            <text font-family="monospace" font-size="16" fill="white" font-weight="bold" letter-spacing="3">
+                <textPath href="#circlePath2" startOffset="50%" text-anchor="middle">SUV • SUV • SUV •</textPath>
+            </text>
+        </svg>
+        <img src="img/icon/2.png" alt="SUV Icon" class="icon-suv">
+    </a>
+
+    <!-- Hatchback: Scaled font-size to 12 to perfectly fit 2 full repetitions -->
+    <a href="hatchback.html" class="icon-link">
+        <svg class="spinning-text" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path id="circlePath3" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent" />
+            <text font-family="monospace" font-size="12" fill="white" font-weight="bold" letter-spacing="2">
+                <textPath href="#circlePath3" startOffset="50%" text-anchor="middle">HATCHBACK • HATCHBACK •</textPath>
+            </text>
+        </svg>
+        <img src="img/icon/3.png" alt="Hatchback Icon" class="icon-hatchback">
+    </a>
+
+    <!-- MPV: Keeping original balanced settings -->
+    <a href="mpv.html" class="icon-link">
+        <svg class="spinning-text" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path id="circlePath4" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent" />
+            <text font-family="monospace" font-size="16" fill="white" font-weight="bold" letter-spacing="3">
+                <textPath href="#circlePath4" startOffset="50%" text-anchor="middle">MPV • MPV • MPV •</textPath>
+            </text>
+        </svg>
+        <img src="img/icon/4.png" alt="MPV Icon" class="icon-mpv">
+    </a>
+
+    <!-- Crossover: Scaled font-size to 12 to perfectly fit 2 full repetitions -->
+    <a href="crossover.html" class="icon-link">
+        <svg class="spinning-text" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path id="circlePath5" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent" />
+            <text font-family="monospace" font-size="12" fill="white" font-weight="bold" letter-spacing="2">
+                <textPath href="#circlePath5" startOffset="50%" text-anchor="middle">CROSSOVER • CROSSOVER •</textPath>
+            </text>
+        </svg>
+        <img src="img/icon/5.png" alt="Crossover Icon" class="icon-crossover">
+    </a>
+
+    <!-- Pickup: Keeping original balanced settings -->
+    <a href="pickup.html" class="icon-link">
+        <svg class="spinning-text" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path id="circlePath6" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent" />
+            <text font-family="monospace" font-size="16" fill="white" font-weight="bold" letter-spacing="3">
+                <textPath href="#circlePath6" startOffset="50%" text-anchor="middle">PICKUP • PICKUP •</textPath>
+            </text>
+        </svg>
+        <img src="img/icon/6.png" alt="Pickup Icon" class="icon-pickup">
+    </a>
+
+    <!-- Sports: Keeping original balanced settings -->
+    <a href="sports.html" class="icon-link">
+        <svg class="spinning-text" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path id="circlePath7" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent" />
+            <text font-family="monospace" font-size="16" fill="white" font-weight="bold" letter-spacing="3">
+                <textPath href="#circlePath7" startOffset="50%" text-anchor="middle">SPORTS • SPORTS •</textPath>
+            </text>
+        </svg>
+        <img src="img/icon/7.png" alt="Sports Icon" class="icon-sports">
+    </a>
+
+<!-- EV: 4 repetitions spaced evenly around the circle -->
+    <a href="ev.html" class="icon-link">
+        <svg class="spinning-text" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path id="circlePath8" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent" />
+            <text font-family="monospace" font-size="14" fill="white" font-weight="bold" letter-spacing="3">
+                <textPath href="#circlePath8" startOffset="50%" text-anchor="middle">EV • EV • EV • EV •</textPath>
+            </text>
+        </svg>
+        <img src="img/icon/8.png" alt="EV Icon" class="icon-ev">
+    </a>
+</div>
+
+    <div class="explore-title">
+        <h2>EXPLORE ALL MODEL</h2>
+    </div>
+
+    <section class="car-grid">
+        <a href="sedan.html" class="car-card">
+            <div class="glass-box">
+                <img src="img/sedan.png" alt="Sedan">
+            </div>
+            <div class="stats">
+                <div class="stat-row">
+                    <span class="label">Price</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Durability</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Storage</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+            </div>
+            <h3>SEDAN</h3>
+        </a>
+
+        <a href="suv.html" class="car-card">
+            <div class="glass-box">
+                <img src="img/suv.png" alt="SUV">
+            </div>
+            <div class="stats">
+                <div class="stat-row">
+                    <span class="label">Price</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Durability</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Storage</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div></div>
+                </div>
+            </div>
+            <h3>SUV</h3>
+        </a>
+
+        <a href="hatchback.html" class="car-card">
+            <div class="glass-box">
+                <img src="img/hatchback.png" alt="Hatchback">
+            </div>
+            <div class="stats">
+                <div class="stat-row">
+                    <span class="label">Price</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Durability</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Storage</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+            </div>
+            <h3>HATCHBACK</h3>
+        </a>
+
+        <a href="mpv.html" class="car-card">
+            <div class="glass-box">
+                <img src="img/mpv.png" alt="MPV">
+            </div>
+            <div class="stats">
+                <div class="stat-row">
+                    <span class="label">Price</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Durability</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Storage</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div></div>
+                </div>
+            </div>
+            <h3>MPV</h3>
+        </a>
+
+        <a href="crossover.html" class="car-card">
+            <div class="glass-box">
+                <img src="img/crossover.png" alt="Crossover">
+            </div>
+            <div class="stats">
+                <div class="stat-row">
+                    <span class="label">Price</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Durability</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Storage</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+            </div>
+            <h3>CROSSOVER</h3>
+        </a>
+
+        <a href="pickup.html" class="car-card">
+            <div class="glass-box">
+                <img src="img/pickuptruck.png" alt="Pickup Truck">
+            </div>
+            <div class="stats">
+                <div class="stat-row">
+                    <span class="label">Price</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Durability</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Storage</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div></div>
+                </div>
+            </div>
+            <h3>PICKUP TRUCK</h3>
+        </a>
+
+        <a href="sports.html" class="car-card">
+            <div class="glass-box">
+                <img src="img/sports.png" alt="Sports" class="flip-horizontal">
+            </div>
+            <div class="stats">
+                <div class="stat-row">
+                    <span class="label">Price</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Durability</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Storage</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+            </div>
+            <h3>SPORTS</h3>
+        </a>
+
+        <a href="ev.html" class="car-card">
+            <div class="glass-box">
+                <img src="img/ev.png" alt="Electric Vehicle">
+            </div>
+            <div class="stats">
+                <div class="stat-row">
+                    <span class="label">Price</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Durability</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+                <div class="stat-row">
+                    <span class="label">Storage</span>
+                    <div class="bars"><div class="bar filled"></div><div class="bar filled"></div><div class="bar filled"></div><div class="bar"></div><div class="bar"></div></div>
+                </div>
+            </div>
+            <h3>ELECTRIC VEHICLE</h3>
+        </a>
+    </section>
+
+    <footer>
+        <a href="#top" class="back-to-top">
+            <p>Back To Top</p>
+            <div class="arrows">
+                <span>&#708;</span>
+                <span>&#708;</span>
+            </div>
+        </a>
+    </footer>
+
+    <!-- Dark Overlay background for when menu is open -->
+    <div id="menu-overlay" onclick="closeMenu()"></div>
+
+    <!-- The Slide-in Menu Bar -->
+    <div id="side-menu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">☰</a>
+        
+        <a href="index.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/logo/car.png" alt="Home" class="menu-img menu-icon-home">
+            </div>
+            <span>Home</span>
+        </a>
+        <a href="sedan.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/1.png" alt="Sedan" class="menu-img menu-icon-sedan">
+            </div>
+            <span>Sedan</span>
+        </a>
+        <a href="suv.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/2.png" alt="SUV" class="menu-img menu-icon-suv">
+            </div>
+            <span>SUV</span>
+        </a>
+        <a href="hatchback.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/3.png" alt="Hatchback" class="menu-img menu-icon-hatchback">
+            </div>
+            <span>Hatchback</span>
+        </a>
+        <a href="mpv.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/4.png" alt="MPV" class="menu-img menu-icon-mpv">
+            </div>
+            <span>MPV</span>
+        </a>
+        <a href="crossover.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/5.png" alt="Crossover" class="menu-img menu-icon-crossover">
+            </div>
+            <span>Crossover</span>
+        </a>
+        <a href="pickup.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/6.png" alt="Pickup Truck" class="menu-img menu-icon-pickup">
+            </div>
+            <span>Pickup Truck</span>
+        </a>
+        <a href="sports.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/7.png" alt="Sports" class="menu-img menu-icon-sports">
+            </div>
+            <span>Sports</span>
+        </a>
+        <a href="ev.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/8.png" alt="EV" class="menu-img menu-icon-ev">
+            </div>
+            <span>EV</span>
+        </a>
+    </div>
+
+<!-- Script to Handle the Menu Animation and Banner Rotation -->
+    <script>
+        // --- Slide-in Menu Functionality ---
+        function openMenu() {
+            document.getElementById("side-menu").style.right = "0";
+            document.getElementById("menu-overlay").style.display = "block";
+        }
+
+        function closeMenu() {
+            document.getElementById("side-menu").style.right = "-400px";
+            document.getElementById("menu-overlay").style.display = "none";
+        }
+
+        // --- Banner Image Rotation ---
+        const bannerImages = [
+            'img/banner/b3.jpg',
+            'img/banner/b4.jpg',
+            'img/banner/b1.jpg',
+            'img/banner/b2.jpg'
+        ];
+        
+        let currentImageIndex = 0;
+        const heroImage = document.querySelector('.hero-image');
+
+        // Change the image every 4 seconds (4000 milliseconds)
+        setInterval(() => {
+            // 1. Trigger the fade out (dissolves to the black background)
+            heroImage.classList.add('fade');
+            
+            // 2. Wait 500ms for the CSS transition to finish before swapping the image
+            setTimeout(() => {
+                currentImageIndex = (currentImageIndex + 1) % bannerImages.length;
+                heroImage.src = bannerImages[currentImageIndex];
+                
+                // 3. Fade the new image back in
+                heroImage.classList.remove('fade');
+            }, 500); 
+            
+        }, 4000); 
+    </script>
+</body>
+</html>

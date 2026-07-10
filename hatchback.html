@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatchback - BestDrive</title>
+    <!-- Core styles from main page -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylemenu.css">
+    <!-- Specific styles for the Hatchback page -->
+    <link rel="stylesheet" href="css/stylehatchback.css">
+</head>
+<body id="top" class="hatchback-page">
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo/car.png" alt="Car Logo" class="logo-img"> BestDrive
+            </a>
+            <div class="menu-icon" onclick="openMenu()">☰</div>
+        </div>
+    </header>
+
+<!-- Main Hatchback Feature Profile -->
+    <section class="feature-card-wrapper">
+        <div class="custom-showcase">
+            
+            <!-- Top Box: Title and Car Image -->
+            <div class="showcase-top">
+                <h1>HATCHBACK</h1>
+                <!-- Assuming standard naming convention for the main showcase image -->
+                <img src="img/hatchback.png" alt="Hatchback" class="showcase-car">
+            </div>
+            
+            <!-- Bottom Box: Statistics -->
+            <div class="showcase-bottom">
+                
+                <!-- Price: 1/5 -->
+                <div class="stat-row">
+                    <span class="label">Price</span>
+                    <div class="bars">
+                        <div class="bar filled"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                
+                <!-- Durability: 3/5 -->
+                <div class="stat-row">
+                    <span class="label">Durability</span>
+                    <div class="bars">
+                        <div class="bar filled"></div>
+                        <div class="bar filled"></div>
+                        <div class="bar filled"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                
+                <!-- Storage: 2/5 -->
+                <div class="stat-row">
+                    <span class="label">Storage</span>
+                    <div class="bars">
+                        <div class="bar filled"></div>
+                        <div class="bar filled"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div> <!-- FIXED: Closes custom-showcase -->
+    </section> <!-- FIXED: Closes feature-card-wrapper -->
+
+    <!-- Collapsible Accordion Sections -->
+    <section class="accordion-container">
+    <!-- Collapsible Accordion Sections -->
+    <section class="accordion-container">
+        
+<!-- Definition -->
+        <details open>
+            <summary>Definition <span class="arrow">&#709;</span></summary>
+            <div class="details-content content-flex">
+                <div class="content-text">
+                    <p>A hatchback is a car body configuration with a "rear door" that swings upward to provide access to a cargo area. In a hatchback, the passenger cabin and trunk space are integrated into a single continuous volume. Hatchbacks are typically described as three-door (two entry doors and the hatch) or five-door (four entry doors and the hatch) cars.</p>
+                    <ul>
+                        <li><strong>Two-Box Structure:</strong> Most hatchbacks utilize a two-box design, where the engine is housed in the front box and the passenger cabin and cargo area are combined in a single volume in the second box.</li>
+                        <li><strong>Hatchback Door:</strong> The defining feature is the upward-swinging rear door (the hatch). This door hinges at the roof level, rather than below the rear window like a traditional trunk.</li>
+                    </ul>
+                    
+                    <!-- Updated Grid: Forced to be left and right -->
+                    <div class="style-image-grid two-col" style="margin-top: 20px; flex-wrap: nowrap;">
+                        <img src="img/gallery/hatchback/hatchback1.jpg" alt="Hatchback Example 1" style="min-width: 0;">
+                        <img src="img/gallery/hatchback/hatchback2.jpg" alt="Hatchback Example 2" style="min-width: 0;">
+                    </div>
+                    
+                </div>
+                <img src="img/gallery/body.png" alt="Hatchback Body Structure" class="content-image">
+            </div>
+        </details>
+
+        <!-- Standard Styles -->
+        <details open>
+            <summary>Standard Styles <span class="arrow">&#709;</span></summary>
+            <div class="details-content">
+                
+                <!-- Liftback -->
+                <div class="style-item row-layout">
+                    <div class="content-text">
+                        <h3>Liftback</h3>
+                        <p>Some models like modern fastbacks feature a "liftback" tailgate. The rear is steeply sloped, but lifts up entirely from the roofline, providing hatchback-like access to the cargo area.</p>
+                    </div>
+                    <img src="img/gallery/hatchback/liftback.jpg" alt="Liftback" class="style-image-single">
+                </div>
+
+                <!-- Notchback -->
+                <div class="style-item col-layout">
+                    <div class="content-text">
+                        <h3>Notchback</h3>
+                        <p>These designs appear to have a "three-box" sedan profile but actually feature a hatchback rear door and trunk lid. The hatch mechanism includes the rear window, opening the entire rear passenger area to the cargo compartment.</p>
+                    </div>
+                    <div class="style-image-grid two-col">
+                        <img src="img/gallery/hatchback/notchback1.jpg" alt="Notchback 1">
+                        <img src="img/gallery/hatchback/notchback2.jpg" alt="Notchback 2">
+                    </div>
+                </div>
+
+                <!-- Station Wagons -->
+                <div class="style-item col-layout">
+                    <div class="content-text">
+                        <h3>Station Wagons</h3>
+                        <p>While similar, wagons differ slightly from hatchbacks. They feature extended roofs and a D-pillar for maximized cargo space, whereas hatchbacks usually have a steeply raked rear hatch and a more compact overall footprint.</p>
+                    </div>
+                    <div class="style-image-grid two-col">
+                        <img src="img/gallery/hatchback/wagons1.jpg" alt="Station Wagon 1">
+                        <img src="img/gallery/hatchback/wagons2.jpg" alt="Station Wagon 2">
+                    </div>
+                </div>
+
+            </div>
+        </details>
+
+        <!-- Price Range -->
+        <details>
+            <summary>Price Range <span class="arrow">&#709;</span></summary>
+            <div class="details-content">
+                <p>Hatchbacks are incredibly popular in Malaysia, ranging from compact affordable entry-level models to high-performance "hot hatches":</p>
+                <ul>
+                    <li><strong>Entry-Level / Subcompact (Segment A/B):</strong> RM 30,000 - RM 90,000. These are compact, highly fuel-efficient vehicles perfect for city driving and first-time car buyers. Examples: Perodua Axia, Perodua Myvi, and Proton Iriz.</li>
+                    <li><strong>Compact / C-Segment (Segment C):</strong> RM 90,000 - RM 150,000. These provide more space, better performance, and higher-quality interiors, suitable for small families or individuals prioritizing driving dynamics. Examples: Honda Civic Hatchback, and Toyota Yaris.</li>
+                    <li><strong>Premium Compact / Hot Hatches:</strong> RM 150,000 - RM 300,000+. These models focus on spirited driving, refined interiors, and high performance. Examples: Volkswagen Golf GTI, Mercedes-Benz A-Class, and MINI Cooper 5-Door.</li>
+                </ul>
+            </div>
+        </details>
+
+        <!-- Storage Capacity -->
+        <details>
+            <summary>Storage Capacity <span class="arrow">&#709;</span></summary>
+            <div class="details-content">
+                <p>The hatchback's defining feature is its versatile approach to cargo management within a compact footprint:</p>
+                <ul>
+                    <li><strong>Shared Cargo Space:</strong> Unlike the separate trunk of a sedan, the cargo area in a hatchback is part of the main cabin, usually separated by a parcel shelf.</li>
+                    <li><strong>Fold-Flat Flexibility:</strong> The true magic of a hatchback happens when you fold the rear seats down. Because the cargo area isn't enclosed by a fixed trunk structure, folding the seats transforms a relatively small car into a vehicle that can swallow large, bulky items like flat-pack furniture, bicycles, or large boxes — items that would never fit through the narrow trunk opening of a sedan.</li>
+                    <li><strong>Vertical Accommodation:</strong> The lack of a fixed rear deck allows for taller items to be carried, leveraging the full height of the interior cabin.</li>
+                </ul>
+            </div>
+        </details>
+
+        <!-- Durability And Reliability -->
+        <details>
+            <summary>Durability And Reliability <span class="arrow">&#709;</span></summary>
+            <div class="details-content">
+                <p>Hatchbacks share much of their mechanical underpinnings with sedans, meaning they generally offer similar longevity and reliability:</p>
+                <ul>
+                    <li><strong>City-Focused Wear:</strong> Hatchbacks are often used extensively in urban environments, subjecting them to stop-and-go traffic, frequent braking, and rougher city streets. This can lead to accelerated wear on components like brakes, suspension, and clutches.</li>
+                    <li><strong>Interior Durability:</strong> Because the cargo area is open to the cabin, the interior materials in the rear might be more prone to scratches, scuffs, or stains from hauling cargo compared to the isolated trunk of a sedan.</li>
+                    <li><strong>Cost of Maintenance:</strong> Hatchbacks are generally very economical to maintain. They share platforms and parts with other high-volume cars, making replacement parts cheap and readily available. Their smaller engines and lighter weight also contribute to lower running costs and less strain on mechanical components.</li>
+                </ul>
+            </div>
+        </details>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#top" class="back-to-top">
+            <p>Back To Top</p>
+            <div class="arrows">
+                <span>&#708;</span>
+                <span>&#708;</span>
+            </div>
+        </a>
+    </footer>
+
+    <!-- Slide-in Menu -->
+    <div id="menu-overlay" onclick="closeMenu()"></div>
+    <div id="side-menu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">☰</a>
+        
+        <a href="index.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/logo/car.png" alt="Home" class="menu-img menu-icon-home">
+            </div>
+            <span>Home</span>
+        </a>
+        <a href="sedan.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/1.png" alt="Sedan" class="menu-img menu-icon-sedan">
+            </div>
+            <span>Sedan</span>
+        </a>
+        <a href="suv.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/2.png" alt="SUV" class="menu-img menu-icon-suv">
+            </div>
+            <span>SUV</span>
+        </a>
+        <a href="hatchback.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/3.png" alt="Hatchback" class="menu-img menu-icon-hatchback">
+            </div>
+            <span>Hatchback</span>
+        </a>
+        <a href="mpv.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/4.png" alt="MPV" class="menu-img menu-icon-mpv">
+            </div>
+            <span>MPV</span>
+        </a>
+        <a href="crossover.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/5.png" alt="Crossover" class="menu-img menu-icon-crossover">
+            </div>
+            <span>Crossover</span>
+        </a>
+        <a href="pickup.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/6.png" alt="Pickup Truck" class="menu-img menu-icon-pickup">
+            </div>
+            <span>Pickup Truck</span>
+        </a>
+        <a href="sports.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/7.png" alt="Sports" class="menu-img menu-icon-sports">
+            </div>
+            <span>Sports</span>
+        </a>
+        <a href="ev.html" class="menu-item">
+            <div class="menu-icon-wrapper">
+                <img src="img/icon/8.png" alt="EV" class="menu-img menu-icon-ev">
+            </div>
+            <span>EV</span>
+        </a>
+    </div>
+
+    <!-- Script to Handle the Menu Animation -->
+    <script>
+        function openMenu() {
+            document.getElementById("side-menu").style.right = "0";
+            document.getElementById("menu-overlay").style.display = "block";
+        }
+        function closeMenu() {
+            document.getElementById("side-menu").style.right = "-400px";
+            document.getElementById("menu-overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
